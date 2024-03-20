@@ -17,7 +17,7 @@ local options = {
 local plugins = {
   {
     "stevearc/conform.nvim",
-    -- event = 'BufWritePre' -- uncomment for format on save
+    event = 'BufWritePre',
     config = function()
       require("conform").setup(options)
     end,
