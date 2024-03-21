@@ -20,9 +20,18 @@ local servers = {
       },
     },
   },
+  --php
+  intelephense = {
+    filetypes = { "php" },
+  },
   -- python
   pyright = {
     filetypes = { "python" },
+  },
+  -- lua
+  lua_ls = {
+    cmd = { "lua-language-server" },
+    filetypes = { "lua" },
   },
 }
 
