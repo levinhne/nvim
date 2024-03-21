@@ -20,6 +20,8 @@ local servers = {
       },
     },
   },
+  -- javascript/typesctipt
+  tsserver = {},
   --php
   intelephense = {
     filetypes = { "php" },
