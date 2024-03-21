@@ -1,6 +1,6 @@
 local autocmd = vim.api.nvim_create_autocmd
 
-local languages = { "go", "proto" }
+local languages = { "go", "proto", "Makefile" }
 for _, language in ipairs(languages) do
   autocmd("FileType", {
     pattern = language,
