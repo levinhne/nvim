@@ -1,30 +1,40 @@
 local plugins = {
-	{
-		"williamboman/mason.nvim",
-		opts = {
-			ensure_installed = {
-				-- lua
-				"lua-language-server",
-				"stylua",
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        -- lua
+        "lua-language-server",
+        "stylua",
 
-				-- go
-				"gopls",
+        -- go
+        "gopls",
+        "golangci_lint_ls",
+        -- protobuf
+        "bufls",
 
-				-- python
-				"black",
-				"debugpy",
-				"mypy",
-				"ruff",
-				"pyright",
+        -- python
+        "black",
+        "debugpy",
+        "mypy",
+        "ruff",
+        "pyright",
 
-				-- javascript
-				"eslint-lsp",
-				"js-debug-adapter",
-				"prettier",
-				"typescript-language-server",
-			},
-		},
-	},
+        -- php
+        "intelephense",
+
+        -- javascript
+        "tsserver",
+        "eslint",
+        "js-debug-adapter",
+        "prettier",
+        "typescript-language-server",
+
+        -- css
+        "tailwindcss",
+      },
+    },
+  },
 }
 
 return plugins
