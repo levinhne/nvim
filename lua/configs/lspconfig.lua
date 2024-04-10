@@ -3,8 +3,11 @@ local configs = require "nvchad.configs.lspconfig"
 local util = require "lspconfig/util"
 
 local servers = {
+  json = {},
   html = {},
   cssls = {},
+  tailwindcss = {},
+
   -- go
   gopls = {
     cmd = { "gopls" },
@@ -20,16 +23,26 @@ local servers = {
       },
     },
   },
+  bufls = {},
+
   -- javascript/typesctipt
   tsserver = {},
+  denols = {},
+  eslint = {},
+
   --php
   intelephense = {
     filetypes = { "php" },
   },
+
   -- python
   pyright = {
     filetypes = { "python" },
   },
+
+  -- docker
+  dockerls = {},
+
   -- lua
   lua_ls = {
     cmd = { "lua-language-server" },

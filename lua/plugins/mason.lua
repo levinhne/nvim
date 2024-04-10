@@ -9,9 +9,9 @@ local plugins = {
 
         -- go
         "gopls",
-        "golangci_lint_ls",
+        "golangci-lint-langserver",
         -- protobuf
-        "bufls",
+        "buf-language-server",
 
         -- python
         "black",
@@ -24,14 +24,14 @@ local plugins = {
         "intelephense",
 
         -- javascript
-        "tsserver",
-        "eslint",
+        "deno",
+        "eslint_lsp",
         "js-debug-adapter",
         "prettier",
         "typescript-language-server",
 
         -- css
-        "tailwindcss",
+        "tailwindcss-language-server",
       },
     },
   },
