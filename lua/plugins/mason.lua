@@ -25,13 +25,19 @@ local plugins = {
 
         -- javascript
         "deno",
-        "eslint_lsp",
+        "eslint-lsp",
         "js-debug-adapter",
         "prettier",
         "typescript-language-server",
 
+        -- html
+        "html-lsp",
         -- css
+        "css-lsp",
         "tailwindcss-language-server",
+
+        -- docker
+        "dockerfile-language-server",
       },
     },
   },

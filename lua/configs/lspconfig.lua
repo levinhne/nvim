@@ -3,7 +3,7 @@ local configs = require "nvchad.configs.lspconfig"
 local util = require "lspconfig/util"
 
 local servers = {
-  json = {},
+  jsonls = {},
   html = {},
   cssls = {},
   tailwindcss = {},
