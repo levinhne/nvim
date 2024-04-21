@@ -29,6 +29,7 @@ local plugins = {
         "js-debug-adapter",
         "prettier",
         "typescript-language-server",
+        "json-lsp",
 
         -- html
         "html-lsp",
