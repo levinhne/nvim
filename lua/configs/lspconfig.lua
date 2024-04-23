@@ -11,7 +11,7 @@ local servers = {
   -- go
   gopls = {
     cmd = { "gopls" },
-    filetypes = { "go", "gomod", "gowork", "gotmpl" },
+    filetypes = { "go", "gomod", "gowork", "gotmpl", "tmpl" },
     root_dir = util.root_pattern("go.work", "go.mod", ".git"),
     settings = {
       gopls = {
