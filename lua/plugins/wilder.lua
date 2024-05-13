@@ -21,28 +21,30 @@ local plugins = {
         --   right = { " ", wilder.popupmenu_scrollbar() },
         -- },
         wilder.popupmenu_renderer(
-          wilder.popupmenu_palette_theme {
+          -- wilder.popupmenu_palette_theme {
+          --   -- 'single', 'double', 'rounded' or 'solid'
+          --   -- can also be a list of 8 characters, see :h wilder#popupmenu_palette_theme() for more details
+          --   border = "rounded",
+          --   max_height = "75%", -- max height of the palette
+          --   min_height = 0, -- set to the same as 'max_height' for a fixed height window
+          --   prompt_position = "top", -- 'top' or 'bottom' to set the location of the prompt
+          --   reverse = 0, -- set to 1 to reverse the order of the list, use in combination with 'prompt_position'
+          --   left = { " ", wilder.popupmenu_devicons() },
+          --   right = { " ", wilder.popupmenu_scrollbar() },
+          -- }
+          wilder.popupmenu_border_theme {
+            highlights = {
+              border = "", -- highlight to use for the border
+            },
             -- 'single', 'double', 'rounded' or 'solid'
-            -- can also be a list of 8 characters, see :h wilder#popupmenu_palette_theme() for more details
+            -- can also be a list of 8 characters, see :h wilder#popupmenu_border_theme() for more details
             border = "rounded",
-            max_height = "75%", -- max height of the palette
-            min_height = 0, -- set to the same as 'max_height' for a fixed height window
-            prompt_position = "top", -- 'top' or 'bottom' to set the location of the prompt
-            reverse = 0, -- set to 1 to reverse the order of the list, use in combination with 'prompt_position'
+            min_width = "100%",
+            max_height = "25%",
+            reverse = 0,
             left = { " ", wilder.popupmenu_devicons() },
             right = { " ", wilder.popupmenu_scrollbar() },
           }
-          -- wilder.popupmenu_border_theme {
-          --   highlights = {
-          --     border = "", -- highlight to use for the border
-          --   },
-          --   -- 'single', 'double', 'rounded' or 'solid'
-          --   -- can also be a list of 8 characters, see :h wilder#popupmenu_border_theme() for more details
-          --   border = "rounded",
-          --   prompt_position = "top",
-          --   max_height = "75%",
-          --   reverse = 0,
-          -- }
         )
       )
     end,

@@ -5,7 +5,7 @@
 local M = {}
 
 M.ui = {
-  theme = "github_dark",
+  theme = "chadracula-evondev",
   transparency = true,
   telescope = { style = "bordered" },
   statusline = {
