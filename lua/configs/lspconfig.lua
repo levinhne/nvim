@@ -40,6 +40,15 @@ local servers = {
     filetypes = { "python" },
   },
 
+  -- helm
+  helm_ls = {
+    yamlls = {
+      path = "yaml-language-server",
+    },
+  },
+
+  yamlls = {},
+
   -- docker
   dockerls = {},
 

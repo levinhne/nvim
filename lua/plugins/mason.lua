@@ -37,8 +37,10 @@ local plugins = {
         "css-lsp",
         "tailwindcss-language-server",
 
-        -- docker
+        -- devops
+        "helm-ls",
         "dockerfile-language-server",
+        "yaml-language-server",
       },
     },
   },

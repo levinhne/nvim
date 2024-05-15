@@ -5,6 +5,8 @@ local options = {
     html = { "prettier" },
     json = { "prettier" },
     javascript = { { "prettierd", "prettier" } },
+    yml = { { "prettierd", "prettier" } },
+    yaml = { { "prettierd", "prettier" } },
   },
 
   format_on_save = {
