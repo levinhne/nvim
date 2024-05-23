@@ -15,6 +15,7 @@ local servers = {
     root_dir = util.root_pattern("go.work", "go.mod", ".git"),
     settings = {
       gopls = {
+        buildFlags = { "-tags=wireinject" },
         completeUnimported = true,
         usePlaceholders = true,
         analyses = {
