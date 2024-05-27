@@ -1,7 +1,15 @@
 local plugins = {
   {
-    "github/copilot.vim"
-  }
+    "github/copilot.vim",
+    event = "InsertEnter",
+    config = function()
+      vim.g.copilot_enabled = true
+      vim.g.copilot_no_tab_map = true
+      vim.g.copilot_filetypes = {
+        html = false,
+      }
+    end,
+  },
 }
 
 return plugins
