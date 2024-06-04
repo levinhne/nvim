@@ -24,6 +24,7 @@ local servers = {
       },
     },
   },
+  golangci_lint_ls = {},
   bufls = {},
 
   -- javascript/typesctipt
