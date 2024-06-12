@@ -1,38 +1,18 @@
 return {
-  {
-    "stevearc/conform.nvim",
-    -- event = 'BufWritePre', -- uncomment for format on save
-    config = function()
-      require "configs.conform"
-    end,
-  },
-
-  -- These are some examples, uncomment them if you want to see them work!
-  -- {
-  --   "neovim/nvim-lspconfig",
-  --   config = function()
-  --     require("nvchad.configs.lspconfig").defaults()
-  --     require "configs.lspconfig"
-  --   end,
-  -- },
-  --
-  -- {
-  -- 	"williamboman/mason.nvim",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"lua-language-server", "stylua",
-  -- 			"html-lsp", "css-lsp" , "prettier"
-  -- 		},
-  -- 	},
-  -- },
-  --
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
+  { import = "plugins.override.go" },
+  { import = "plugins.override.fzf" },
+  { import = "plugins.override.helm" },
+  { import = "plugins.override.flash" },
+  { import = "plugins.override.mason" },
+  { import = "plugins.override.wilder" },
+  { import = "plugins.override.zoxide" },
+  { import = "plugins.override.codeium" },
+  { import = "plugins.override.copilot" },
+  { import = "plugins.override.lazygit" },
+  { import = "plugins.override.conform" },
+  { import = "plugins.override.diffview" },
+  { import = "plugins.override.lspconfig" },
+  { import = "plugins.override.neoscroll" },
+  { import = "plugins.override.treesitter" },
+  { import = "plugins.override.visual-multi" },
 }
