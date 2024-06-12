@@ -4,6 +4,20 @@ require "nvchad.options"
 
 -- local o = vim.o
 -- o.cursorlineopt ='both' -- to enable cursorline!
+local g = {
 
-vim.opt.mouse = "v"
-vim.opt.swapfile = false
+}
+
+local opts = {
+  relativenumber = true,
+  mouse = "v",
+  swapfile = false
+}
+
+for k, v in pairs(g) do
+  vim.g[k] = v
+end
+
+for k, v in pairs(opt) do
+  vim.opt[k] = v
+end
