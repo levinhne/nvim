@@ -9,6 +9,7 @@ return {
   { import = "plugins.override.mason" },
   { import = "plugins.override.lspconfig" },
   { import = "plugins.override.conform" },
+  { import = "plugins.override.dap" },
   --
   { import = "plugins.override.lazygit" },
   { import = "plugins.override.diffview" },

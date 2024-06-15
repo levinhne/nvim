@@ -18,6 +18,6 @@ for k, v in pairs(g) do
   vim.g[k] = v
 end
 
-for k, v in pairs(opt) do
+for k, v in pairs(opts) do
   vim.opt[k] = v
 end
